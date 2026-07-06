@@ -107,6 +107,12 @@ function Login() {
         if (error) setError("");
     };
     
+    //Demo autofill function
+    const handleDemoAutofill = () => {
+        setFormData({ username: 'PES2UG22CS001', password: 'test' });
+        if (error) setError("");
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!formData.username || !formData.password) {
@@ -172,6 +178,14 @@ function Login() {
                         {error && <div className={loginStyles.errorMessage}>{error}</div>}
                         <button type="submit" className={loginStyles.loginButton} disabled={loading}>
                             {loading ? 'Logging in...' : 'Login'}
+                        </button>
+                        <button
+                            type="button"
+                            className={loginStyles.demoButton}
+                            onClick={handleDemoAutofill}
+                            disabled={loading}
+                        >
+                            Get Demo Credentials
                         </button>
                     </form>
                 </div>
