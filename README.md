@@ -17,9 +17,8 @@ The system is designed with clean architecture principles, implementing design p
 ---
 
 ## Live Demo
-**Backend Server(Render)**
-- **Health Check**: [https://attendance-backend-zpio.onrender.com/api/test](https://attendance-backend-zpio.onrender.com/api/test)
-(Hosted on Render Free-Tier, can take upto 30s-1min to start-up)
+**Backend Server(self-hosted)**
+- **Health Check**: [API Status](https://https://homeserver.tail66577a.ts.net/api/test)
 
 **Frontend (Vercel)**
 - **Live UI**: [https://attendance-mgmt-mu.vercel.app](https://attendance-mgmt-mu.vercel.app)
